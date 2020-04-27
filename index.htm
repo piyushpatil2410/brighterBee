@@ -1,0 +1,196 @@
+
+<!Doctype html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>BrighterBee: Learn to Code</title>
+	<link rel="stylesheet" type="text/css" href="css/index_style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet'>
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+	
+	
+</head>
+<body>
+		
+	<header id="header">
+
+	<ul class="head_logo"> 
+		<a href="#"><img src="img/Screenshot (65).png"></a>
+	</ul>
+
+	<ul class="top_menu">
+		<div class="signup">
+			<a href="login.htm">SIGN UP</a> 	
+		</div>
+		<div class="login">
+			<a href="login.htm#login">LOG IN <img src="img/login_icon.png"></a>	
+		</div>
+	</ul>
+
+
+	</header>
+
+	<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div> 
+<script type="text/javascript">
+  window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}</script>
+
+
+	
+	<div class="main">
+		<div class="main-text">
+		<a href="jobs.htm" class="hiring">We are hiring! ></a><br><br>
+		Learn to code,<br>build apps, and<br> much more<br><br>
+		<div class="disc">BrighterBee is a platform that teaches computer science in a fun and interactive way</div><br>
+		<div class="dash"></div>
+		</div>
+		<img src="img/head_poster.svg" class="head_poster"> 
+	</div>
+
+<div class="feature-tab">
+	<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <img src="img/feature1.png">
+</div>
+<div id="Paris" class="tabcontent">
+  <img src="img/feature2.png">
+</div>
+<div id="Tokyo" class="tabcontent">
+ <img src="img/feature3.png">
+</div>
+
+
+<!-- Tab links --><center>
+<div class="tab">
+  <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')"><img src="img/tab_icon1.png" id="icon1"> Learn to code with<br>bite exercises</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')"><img src="img/tab_icon2.png">Get a personalized<br>curriculum</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img src="img/tab_icon3.png">Choose a language<br>you want to learn</button>
+</div>
+</center>
+	
+	<script type="text/javascript">
+		
+		function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+
+}
+document.getElementById("defaultOpen").click();
+	</script>
+	
+</div><!-- feature-tab ends here-->
+
+<!--Section 3-->
+<div class="section3">
+
+	<div class="main-text">
+	<br>
+		Learn anytime <br> and everywhere<br><br>
+		<div class="disc">Use your breaks and commutes and learn to code on the go</div><br>
+		<a href="https://itunes.apple.com/us/app/brighterBee-learn-how-to-code-through/id1133960732?mt=8"><img src="img/appstore.png"></a> <a href="https://play.google.com/store/apps/details?id=com.getbrighterBee"><img src="img/gplay.png"></a> 
+		<div class="dash"></div>
+	</div>
+
+	<img src="img/learn.png" class="learn_img"> 
+
+</div>
+<br>
+<br>
+<br>
+<!--options--><center>
+<div class="options">
+Over 23 different<br>courses to choose from
+<a href="#">SEE MORE ></a> 
+
+<img src="img/option.png">	
+</div>
+<center>
+
+<div class="test">
+	<img src="img/testimonial.png">
+	<div class="test_text">"The coding skills acquired through BrighterBee's courses made me feel more confident about my ability to code and create software."
+		<div class="kartik">Piyush Patil</div>
+		<div class="android">Android Developer</div>	
+	</div>
+
+</div>
+<!--
+<div class="creation">
+	<div class="madeby">Site Designed by</div>
+	<div class="kartikd"> Piyush Patil </div>
+
+</div>
+-->
+<div class="container-pages">
+ <div class="txt">
+	<br>
+		What do you <br>want to achieve? <br><br>
+		<div class="disc">Jump into one of our tracks and get started.</div><br>
+		
+	
+
+ </div>
+ 	<div class="btns">
+ 		<center>
+	<button class="btn" onclick="openCity(event, 'Paris')">Make a Game</button>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">Become a Hacker</button><br>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">Build an Android App</button>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">Build an iOS App</button><br>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">Make a Website</button>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">Learn to Code</button>
+	</center>
+	</div>
+</div>
+<footer>
+	<div class="footer">
+	<div><img src="img/footer_img.png"></div>
+	<div class="lnk">
+		<a href="jobs.htm"> Jobs</a><br>
+		<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=support@getbrighterBee.com"> Support</a><br>
+		<a href="https://medium.com/getbrighterBee/brighterBee-press-kit-66f5da5b0375"> Press</a><br>
+		<a href="pricing.htm"> Pricing</a>
+	</div>
+	
+	<div class="lnk">
+		<a href=""> <i class='fab fa-twitter' style='font-size:18px; color:white'></i> Twitter<br></a>
+		<a href=""> <i class='fab fa-facebook' style='font-size:18px; color:white'></i> Facebook<br></a>
+		<a href=""><i class='fab fa-instagram' style='font-size:18px; color:white'></i> Instagrams </a>
+	</div>
+	<hr>
+	<div id="credits">
+	Site Developed By<br><h3><a href="profile.htm" style="color:white; text-decoration: none;">Piyush Patil</a></h3></div>
+	</div>
+
+	
+
+</footer>
+
+
+</body>
+</html>

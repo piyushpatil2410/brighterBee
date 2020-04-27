@@ -1,0 +1,697 @@
+
+html,body{
+	margin:0;
+	padding: 0;
+	font-family: 'Montserrat';
+
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+#header{
+	margin: 0;
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	background-color: #fff ;
+	height: auto;
+	width: 100%;
+	transition: all 0.15s linear;
+	z-index: 1;
+
+
+}
+
+#header .active {
+     box-shadow: 0 0 10px #000;   
+}
+
+
+
+.head_logo img{
+	transition: 0.5s ease-in-out;
+	width: 20vh;
+	height: 7vh;
+	margin-left: 15%;
+	float: left;
+	margin-top: 2vh;
+}
+.head_logo img:hover{
+	transition:  transform 0.4s ease-in-out;
+	transform: scale(1.2);
+
+	
+	margin-left: 15%;
+	float: left;
+}
+body{
+	margin:0;
+	padding:0;
+}
+
+.top_menu{
+	float: right;
+	margin-top: 10px;
+	margin-right: 20%;
+	padding-left: 40px; 
+	background-image: url(../img/circle.png);
+	background-repeat: no-repeat;
+	background-size: 22%;
+	background-position: 20px;
+	transition: background-position 0.8s ease-in-out;
+
+	
+	
+}
+.login{
+	float: right;
+	display: inline;
+	margin: 20px;
+
+}
+.login img{
+	width: 15px;
+	height: 15px;
+	transition: transform 0.15s linear;
+
+}
+
+.login img:hover{
+	width: 15px;
+	height: 15px;
+	transform : translateX(5px);
+	transition: transform 0.15s linear;
+	
+	
+
+}
+.login a{
+	text-decoration: none;
+	color: gray;
+	font-weight: 600;
+	font-family: 'Montserrat';
+}
+
+.login a:hover{
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	font-family: 'Montserrat';
+
+}
+.signup{
+	float: right;
+	margin: 20px;
+	border-radius: 10px;
+	border-color: #00ff19;
+	
+	padding: 10px;
+	border-style: solid;
+	border-width: medium;
+	margin-top: 5px;
+
+
+}
+.signup button{
+	text-decoration: none;
+	color: #00ff19;
+	font-weight: 600;
+	border: none;
+	background: none;
+
+	font-family: 'Montserrat';
+	padding: 10px;
+	font-size: 15px;
+}
+
+.signup button:hover{
+text-decoration: none;
+	color: white;
+	font-weight: 600;
+	padding: 10px;
+	
+	font-family: 'Montserrat';
+
+
+
+}
+.signup a{
+	text-decoration: none;
+	color: #00ff19;
+	font-weight: 600;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding: 15px;
+	font-family: 'Montserrat';
+}
+
+.signup:hover{
+	float: right;
+	margin: 20px;
+	border-radius: 10px;
+	border-color: #00ff19;
+
+	
+	
+	border-style: solid;
+	border-width: medium;
+	background-color: #00ff19;
+	color: #fff;
+	margin-top: 5px;
+
+}
+
+.signup a:hover{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	font-family: 'Montserrat';
+
+	padding-left: 50px;
+	padding-right: 50px;
+	padding: 15px;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: none;
+  position: fixed;
+  top: 77px;
+  z-index: 1;
+}
+
+
+.progress-bar {
+  height: 3px;
+  background: #3075ff;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.main{
+	
+	margin:0;
+
+	margin-bottom: 0;
+	padding: 10px;
+	clear: both;
+	height: 100vh;
+	width: 100%;
+	margin-top: 10%;
+	display: flex;
+	background-image: url(../img/circle.png);
+	background-repeat: no-repeat;
+	background-size: 30%;
+	
+	background-position: -100px 150px;
+
+transition: 0.8s ease-in-out;
+
+
+
+}
+.hiring{
+	margin: 20px;
+	margin-left: 0;
+	border-radius: 50px;
+	border-color: #3f75ff;
+	text-decoration: none;
+	padding: 2px;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-style: solid;
+	border-width: medium;
+	margin-top: 5px;
+	font-size:1.8vh;
+	background-color: #3f75ff;
+	color: #fff;
+	transition:  0.5s ease-in-out;
+
+font-weight: lighter;
+}
+.hiring:hover{
+	margin: 20px;
+	margin-left: none;
+	border-radius: 50px;
+	border-color: #1e49b5;
+	text-decoration: none;
+	padding: 2px;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-style: solid;
+	border-width: medium;
+	margin-top: 5px;
+	font-size:1.8vh;
+	background-color: #1e49b5;
+	color: #fff;
+	font-weight: lighter;
+}
+.hiring a {
+	text-decoration: none;
+}
+.main-text{
+	margin-left: 17%;
+	width: 50%;
+	
+	font-family: 'Montserrat';
+	font-weight: 700;
+	text-overflow: hidden;
+	font-size: 5.1vh;
+	color: #1e387a;
+	margin-top: 5%;
+	animation: text 2s 1;
+
+	
+	}
+
+.disc{
+font-size: 2.5vh;
+color: gray;
+font-weight: lighter;
+font-style: bold;
+
+}
+.dash{
+	margin: 20px;
+	margin-left: 0;
+	border-radius: 50px;
+	border-color: #3f75ff;
+	content: none;
+	float: bottom;
+	padding: 2px;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-style: solid;
+	
+	margin-top: 5px;
+	width: 2vh;
+	height: 0px;
+	
+	background-color: #3f75ff;
+	
+	transition:   0.5s linear;
+
+	margin-bottom: 0;
+
+
+}
+@keyframes text{
+	0%{
+		transform: translateY(-15vh);
+	}
+	100%{
+		transform: translateY(0vh);	
+	}
+}
+
+.head_poster{
+	
+	float: right;
+	width: 100vh;
+	height: 40vh;
+	margin-top: 10%;
+	margin-right: 2%;
+		transition:  transform 1s ease-in-out;
+transform: scale(1.1);
+margin-bottom: 0;
+
+	
+}
+
+
+
+
+
+.feature-tab{
+	margin-top: 0;
+	top: 0;
+	vertical-align: top;
+
+transition: 0.8s ease-in-out;
+}
+
+/* Style the tab */
+.tab {
+
+  background-color: none;
+  clear: both;
+  padding: 0;
+  font-weight: 400;
+
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 50px;
+ text-align: left;
+  font-family: 'Montserrat';
+  margin-left: 3vh;
+  font-weight: 600;
+  box-shadow: 0 0 10px #eaeaea;
+  border-radius: 5px;
+  font-size: 2vh;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 12px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border-color: #00ff19;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+
+}
+.tablinks img{
+	float: left;
+	width: 5vh;
+	height: 5vh;
+	margin-right: 10px;
+	margin-left: 0;
+}
+.tablinks{
+	padding-left: 100px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: none;
+  border-color: #00ff19;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 25px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin-top: 0;
+  margin-left: 0;
+  top: 0;
+ transition: 0.3s;
+  border-top: none;
+ 
+}
+
+.tabcontent img{
+	position: 50px 100px;
+	margin-left: 9vh;
+	margin-top: 0;
+	top: -20vh;
+	 width: 140vh;
+  height: 75vh;
+  transform: scale(1);
+    transition: transform 0.8s ease-in-out;
+}
+
+
+.section3{
+	display: flex;
+	margin-top: 5vh;
+	padding: 5%;
+
+	background-image: url(../img/circle.png);
+	background-repeat: no-repeat;
+	background-size: 30%;
+	
+	background-position: -100px 50px;
+
+transition: 0.8s ease-in-out;
+
+	
+	}
+
+.learn_img {
+	float: right;
+	width: 42vh;
+	height: 40vh;
+	margin-top: 5%;
+	margin-right: 15%;
+	padding-left: 5vh;
+	transition:  transform 1s ease-in-out;
+	transform: scale(1.1);
+	margin-bottom: 0;
+	position: 100px;
+}
+
+.options{
+	margin-left: 20vh;
+	margin-right: 20vh; 
+
+	display: flex;
+	border-color: #000;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	text-overflow: hidden;
+	font-size: 4vh;
+	color: #1e387a;
+	box-shadow: 0 0 50px #ddeaff;
+	border-radius: 10px;
+	padding: 3vh; 
+	padding-top: 5vh; 
+	text-align: left;
+	
+
+}
+.options img{
+	padding-left: 20vh;
+}
+
+.options a {
+	 
+	font-family: 'Montserrat';
+	font-weight: 600;
+	
+	font-size: 2.5vh;
+	color: #1e387a;
+	position: absolute;
+	margin-top: 14vh;
+	color: #00ff19;
+	text-decoration: none;
+}
+
+.test{
+	margin-left: 15%;
+	margin-right: 15%; 
+	display: flex;
+	border-color: #000;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	text-overflow: hidden;
+	font-size: 3vh;
+	color: #1e387a;
+	
+	overflow: hidden;
+	padding: 3vh; 
+	padding-top: 5vh; 
+	text-align: left;
+	background-color: none;
+}
+.test img{
+	position: relative;
+	width: 32vh;
+	height: 33vh;
+	margin-top: 7%;
+	margin-right: 15%;
+	padding-left: 5vh;
+	transition:  transform 1s ease-in-out;
+	transform: scale(1.1);
+	margin-bottom: 0;
+	position: 100px;
+	
+	
+}
+.test_text{
+	margin-top: 15vh;
+	float: right;
+	background-color: none;
+	overflow: hidden;
+}
+.kartik{
+	margin-top: 2vh; 
+	font-weight: 600;
+	font-size: 2vh;
+	color: #a7b4c9;
+
+}
+
+.android{
+	font-weight: 500;
+	font-size: 2vh;
+	color: #c3c5c9;
+
+}
+
+.creation{
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	background-color: #fff;
+	
+
+}
+.creation .madeby{
+	margin-top: 20%;
+	font-size: 7vh;
+	color: #c3c5c9;
+	position: sticky;
+	background-attachment: fixed;
+
+}
+.madeby:hover{
+	margin-top: 20%;
+	font-size: 7vh;
+	color: #c3c5c9;
+	cursor: url(kd.png);
+}
+
+.creation .kartikd{
+	font-size: 10vh;
+	font-weight: bold;
+	position: sticky;
+	
+
+}
+
+.container-pages{
+	width: 100%;
+	margin: 0;
+	margin-top: 5vh;
+	padding:0; 
+	background: url(../img/dfs.svg);
+	background-repeat: no-repeat;
+	background-blend-mode: lighten;
+	background-size: 30%;
+	display: flex;
+	height: 50vh;
+	background-position: 132vh 0vh ;
+}
+
+.container-pages button{
+display: flex;
+float: right;
+background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15vh;
+ text-align: left;
+  font-family: 'Montserrat';
+  margin-left: 3vh;
+  font-weight: 600;
+  box-shadow: 0 0 10px #eaeaea;
+  border-radius: 5px;
+  font-size: 2vh;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 12px;
+  height: 8vh;
+  width: 26vh;
+  margin: 1vh;
+  margin-left: 1px;
+  padding: 0;
+  text-align: center;
+}
+.container-pages button:hover {
+
+  border-color: #00ff19;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+
+}
+.container-pages .btns{
+	margin-top: 8vh;
+	margin-left: -20vh;
+}
+
+.txt{
+	margin-left: 15%;
+	width: 50%;
+	text-align: left;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	text-overflow: hidden;
+	font-size: 5.1vh;
+	color: #1e387a;
+	margin-top: 5%;
+
+}
+.btns button{
+	text-align: center;
+	padding-left: 3vh;
+	align-items: center;
+}
+.footer{
+	margin-top: 20vh;
+	display: flex;
+	background-color: #363c7f;
+	width: 100%;
+	height: auto;
+}
+.footer img{
+	transform: translateY(-12vh);
+	width: 25vh;
+	height: 25vh;
+	margin-left: 30vh;
+}
+.lnk{
+	margin: 5vh;
+	margin-left: 10vh;
+	text-align: left;
+	align-self: center;
+	padding-bottom: 5vh;
+
+}
+
+.lnk a{
+	text-decoration: none;
+	color: white;
+	line-height: 5vh;
+	text-align: left;
+	margin-left: 1vh;
+}
+.lnk a:hover{
+	text-decoration: underline;
+	color: white;
+	
+	text-align: left;
+	margin-left: 1vh;
+}
+.footer hr{
+	margin-left: 15vh;
+}
+.footer #credits{
+	text-align: center;
+	color:white;
+	align-self: center;
+	margin-left: 10%;
+	transition:   0.5s ease-in-out;
+
+}
+
+#credits h3:hover{
+transform: scale(1.3);
+transition:  transform 0.5s ease-in-out;
+
+}

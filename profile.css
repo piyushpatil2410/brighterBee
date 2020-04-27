@@ -1,0 +1,309 @@
+
+html,body{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Montserrat';
+
+}
+*{
+    margin:0;
+    padding:0;
+    
+
+}
+.top{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/kd.png);
+	background-size: cover;
+	background-attachment: fixed;
+	
+	
+}
+.header{
+	width: 50%;
+	background-color: transparent;
+	background: transparent;
+	transition: 1s ease-out;
+}
+
+.header:hover{
+	width: 50%;
+	background-color: transparent;
+	background: transparent;
+	transform: translateX(-2vh);
+	transition: 1s ease-out;
+}
+.div1{
+	width: 100%;
+	height: 100vh;
+
+	
+	
+	
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: none;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+
+.progress-bar {
+  height: 7px;
+  background: #0228ff;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.div1 h1{
+	position: relative;
+	top: 40%;
+	left: 22%;
+	color:#fff;
+	font-size: 9vh;
+	font-weight: 800;
+	
+	animation: text 2s 1;
+}
+
+
+
+@keyframes text{
+	0%{
+		
+		margin-bottom: -40px;
+		letter-spacing: 30px;
+	}
+	100%{
+		color:#fff;
+		letter-spacing: 0px;
+		margin-bottom: -40px;
+	}
+
+}
+
+.div1 img{
+	text-align: center;
+	width: 20vh;
+	border-radius: 70%;
+	position: relative;
+	top: 75vh;
+	left: 43%;
+	box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+	animation: image 1s 1;
+}
+
+@keyframes image{
+	0%{
+		transform: translateY(-25vh);
+	}
+	100%{
+		transform: translateY(5vh);
+	}
+}
+
+.header a{
+	text-decoration: none;
+	color:white;
+	font-size: 2.5vh;
+	margin: 6vh;
+	
+	position: relative;
+	top: 5vh;
+}
+
+.header a:hover{
+	text-decoration: none;
+	color:white;
+	font-size: 2.5vh;
+	margin: 6vh;
+	padding-top: 5vh;
+	position: relative;
+	top: 5vh;
+	transform: translateX(2%);
+}
+.header i{
+	color:white;
+	font-size: 2.5vh;
+	
+	top: 5vh;
+	left: 5vh;
+	position: relative;
+	
+
+}
+
+.container2{
+	display: flex;
+	width: 100%;
+	height: 110vh;
+	background-image: url(../img/concentric-circle.png);
+	background-repeat: no-repeat;
+	background-size: 20%;
+	background-position: -20vh 37vh;
+
+
+	}
+
+
+.left{
+	width: 50%;
+}
+.left h1{
+	position: relative;
+	top:46%;
+	left: 30%;
+	color:#005cf2;
+	font-size: 5vh;
+	font-weight: 800;
+	transition: 1s;
+	transition-delay: 4s;
+}
+
+.right{
+	width: 50%;
+	padding-top: 20vh;
+}
+.right a{
+	text-decoration: none;
+	color:black;
+
+}
+
+.right a:hover{
+	text-decoration: none;
+	color:#005cf2;
+	
+}
+
+
+.wave {
+  width: 50vh;
+  height: 50vh;
+  position: absolute;
+  top: 30%;
+  left: 115%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, .75);
+  position: fixed;
+  z-index: 0;
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+.yt{
+	display: flex;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20vh;
+}
+.yt iframe{
+	width: 90vh;
+	height: 50vh;
+	border-radius: 2vh;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.yt h2{
+	position: relative;
+	top: 20vh;
+	left: 25vh;
+	font-weight: 800;
+	font-size: 4vh;
+	color:#005cf2;
+
+}
+.yt p{
+	position: relative;
+	top: 25vh;
+	left: -6vh;
+	
+
+}
+
+
+.wav{
+	
+	width: 100%;
+	height: 19vh;
+	background-image: url(../img/wave.png);
+
+	background-color: transparent;
+	background-size: cover;
+	position: relative;
+	
+	  transform: scaleY(-1);
+	 background-position: 0vh 19vh ;
+
+	  z-index: 10;
+}
+
+footer{
+	position: absolute;
+
+	z-index: 0;
+	width: 100%;
+	height: 70vh;
+	background:linear-gradient(360deg,#005cf2,#5900e0) ;
+}
+
+footer h1{
+	color:white;
+	margin-left: 10vh;
+	margin-top: 5vh;
+}
+
+.socials{
+	padding:5vh;
+	
+	margin-top: 5vh;
+	text-align: center;
+}
+
+.socials button{
+	background-color: white;
+	padding: 2vh 5vh;
+	border-radius: 10px;
+	font-size: 2vh;
+	font-family: montserrat;
+	background-color: transparent;
+	border: none;
+	font-weight: 500;
+	color:white;
+margin-right: 5vh;
+transition: 0.7s;
+}
+
+.socials button:hover{
+	background-color: white;
+	padding: 2vh 5vh;
+	border-radius: 10px;
+	font-size: 2vh;
+	font-family: montserrat;
+	background-color: white;
+	border: none;
+	font-weight: 500;
+	color:#005cf2;
+	transition: 0.7s;
+	cursor: pointer;
+}
+
+footer p{
+	margin-top: 7vh;
+	text-align: center;
+	color:white;
+	font-size: 1.5vh;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mimo: Login / SignUp</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet'>
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+
+
+	  <div class="head_logo">
+<a href="index.htm"><img src="img/Screenshot (65).png"></a></div>
+
+<section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                    	<div class="left">
+                        <h2 class="form-title">Sign up</h2>
+                        <form  class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password "/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password "/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" onclick="reg()" />
+                            </div>
+                        </form>
+                    	</div>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="img/signup-image.jpg" alt="sign up image"></figure>
+                        <a href="#login" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+ <section class="sign-in" id="login">
+            <div class="container">
+                <div class="signin-content">
+                	
+                    <div class="signin-image">
+                    	
+                        <figure><img src="img/signin-image.jpg" alt="Log in image"></figure>
+                        <a href="#" class="signup-image-link">Create an account</a>
+                    	
+                    
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Log In</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" onclick="val()"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="fab fa-facebook" style="color:blue "></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"style="color:#0061ff "></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"style="color:red "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<script type="text/javascript">
+		function val()
+		{
+			var a=document.getElementById("your_name").value;
+			var b=document.getElementById("your_pass").value;
+			
+
+			if (a.length<=0 && b.length<=0)
+			{
+				alert("enter username and Password");
+			}
+
+			else if (a.length<=0)
+			{
+				alert("Enter username");
+			}
+
+			else if (b.length<=0)
+			{
+				alert("Enter Password");
+			}
+
+			else if (b.length<=8)
+			{
+				alert("Enter Password of More than 8 Characters");
+			}
+
+			else{
+				alert("Login SUCCESSFULL");
+			}
+
+			
+		}
+	</script>
+
+
+<script type="text/javascript">
+		function reg()
+		{
+			var a=document.getElementById("name").value;
+			var b=document.getElementById("email").value;
+			var c=document.getElementById("pass").value;
+			var d=document.getElementById("re_pass").value;
+			
+
+			if (a.length<=0 && b.length<=0 && c.length<=0 && d.length<=0)
+			{
+				alert("Please Enter Details");
+			}
+
+			else if (a.length<=0)
+			{
+				alert("Enter Name");
+			}
+
+			else if (b.length<=0)
+			{
+				alert("Enter Email");
+			}
+
+			else if (c.length<=0)
+			{
+				alert("Please Enter Password");
+			}
+
+			else if (d.length<=0)
+			{
+				alert("Please Retype your Password");
+			}
+
+			else if (c.length<8)
+			{
+				alert("Enter Password of More than 8 Characters");
+			}
+
+
+			else if (c != d)
+			{
+				alert("Enter the Same Password");
+			}
+
+
+			else{
+				alert("Login SUCCESSFULL");
+			}
+
+
+			
+		}
+	</script>
+
+
+
+</body>
+</html>
